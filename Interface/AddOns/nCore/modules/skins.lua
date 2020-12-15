@@ -53,7 +53,6 @@ function nCore:Skins()
 
                     spark:SetTexture(nil)
 
-                    Mixin(tbar, BackdropTemplateMixin)
                     timer:ClearAllPoints()
                     timer:SetPoint("RIGHT", tbar, "RIGHT", -4, 0)
                     timer:SetFont(STANDARD_TEXT_FONT, 22)
@@ -64,6 +63,7 @@ function nCore:Skins()
                     name:SetPoint("RIGHT", timer, "LEFT", -4, 0)
                     name:SetFont(STANDARD_TEXT_FONT, 15)
 
+                    Mixin(tbar, BackdropTemplateMixin)
                     tbar:CreateBeautyBorder(10)
                     tbar:SetBeautyBorderPadding(tbar:GetHeight() + 3, 2, 2, 2, tbar:GetHeight() + 3, 2, 2, 2)
                     tbar:SetBackdrop({bgFile = "Interface\\Buttons\\WHITE8x8"})
